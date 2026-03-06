@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Project page for SafeDMPs: Integrating Formal Safety with DMPs for Adaptive HRI. Published at ICRA (IEEE International Conference on Robotics and Automation) 2026.">
+  <meta name="keywords"
+    content="Robotics, SafeDMPs, DMP, STT, Spatio Temporal Tubes, Dynamical Movement Primitives, Human-Robot Interaction, HRI, ICRA 2026, IEEE International Conference on Robotics and Automation, Adaptive Control, Safety, Formal Methods, Trajectory Generation, Motion Planning, Robot Learning">
+  <meta name="author" content="Pranav Tiwari and Soumyodipta Nath and Ravi Prakash">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SafeDMPs — ICRA 2026</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link rel="icon" href="./favicon.ico">
+
+  <meta property="og:site_name" content="SafeDMPs: Integrating Formal Safety with DMPs for Adaptive HRI" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="SafeDMPs: Integrating Formal Safety with DMPs for Adaptive HRI" />
+  <meta property="og:description" content="by Pranav Tiwari*, Soumyodipta Nath* and Ravi Prakash at IISc" />
+  <meta property="og:url" content="https://SafeDMPs.github.io/" />
+  <meta property="og:image" content="https://SafeDMPs.github.io/static/images/preview.gif" />
+  <meta property="og:image:secure" content="https://SafeDMPs.github.io/static/images/preview.gif" />
+  <meta property="og:video" content="" />
+  <meta property="og:video:secure" content="" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="https://SafeDMPs.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SafeDMPs: Integrating Formal Safety with DMPs for Adaptive HRI" />
+  <meta name="twitter:description" content="by Pranav Tiwari*, Soumyodipta Nath* and Ravi Prakash at IISc" />
+  <meta name="twitter:url" content="https://SafeDMPs.github.io/" />
+  <meta name="twitter:image" content="https://SafeDMPs.github.io/static/images/preview.gif" />
+  <meta name="twitter:site" content="@zipengfu" />
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player" content="" />
+  <meta name="twitter:player:width" content="1280" />
+  <meta name="twitter:player:height" content="720" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-two-thirds is-centered has-text-centered">
+            <div class="has-text-centered" style="margin: 12px 0 18px 0;">
+              <span class="button is-small is-rounded" style="background: linear-gradient(135deg, #5b6abf, #7b68ee);
+                    color:white;
+                    border:none;
+                    font-weight:600;">
+                IEEE International Conference on Robotics and Automation (ICRA) 2026
+              </span>
+            </div>
+            <h1 class="title is-1 publication-title">SafeDMPs</h1>
+            <h2 class="subtitle is-2 publication-subtitle">Integrating Formal Safety with DMPs for Adaptive HRI</h2>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://pranavtiwari.co.in/">Pranav Tiwari</a>*&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/soumyodipta-n-51746225a/">Soumyodipta Nath</a>*&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/ravi-prakash-a93ab9a8/">Ravi Prakash</a>&nbsp;&nbsp;&nbsp;
+              </span>
+            </div>
+            <!-- <div class="is-size-5 publication-authors">
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div> -->
+            <div>
+              <image src="./static/images/logo.jpg" style="width: 95%;"></image>
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./resources/ICRA_submission_2026.pdf"
+                    class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- arXiv Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2509.16482" class="external-link button is-normal is-rounded is-dark"
+                    target="_blank">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Tutorial Link. -->
+                <!-- <span class="link-block">
+                <a href="https://docs.google.com/document/d/1_3yhWjodSNNYlpxkRCPIlvIAaQ76Nqk2wsqhnEVM6Dc" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-book"></i>
+                  </span>
+                  <span>Tutorial</span>
+                </a>
+              </span> -->
+                <!-- Datasets Link. -->
+                <!-- <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1FP5eakcxQrsHyiWBRDsMRvUfSxeykiDc" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Datasets</span>
+                </a> -->
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/Tiwari-Pranav/ghost-In-the-Arm/"
+                    class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                        </path>
+                      </svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Pybullet Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/Tiwari-Pranav/ghost-In-the-Arm/tree/isaacsim-ros2"
+                    class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                        </path>
+                      </svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Isaac Sim Code</span>
+                  </a>
+                </span>
+                </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-two-thirds is-centered has-text-centered">
+            <video download controls autoplay loop muted playsinline src="./resources/ICRA_Demo_Merged_With_Voice.mp4"
+              poster="./resources/loading-icon.gif"
+              style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robots operating in human-centric environments
+              must be both robust to disturbances and provably safe from
+              collisions. Achieving these properties simultaneously and effi-
+              ciently remains a central challenge. While Dynamic Movement
+              Primitives (DMPs) offer inherent stability and generalization
+              from single demonstrations, they lack formal safety guarantees.
+              Conversely, formal methods like Control Barrier Functions
+              (CBFs) provide provable safety but often rely on computa-
+              tionally expensive, real-time optimization, hindering their use
+              in high-frequency control. This paper introduces SafeDMPs, a
+              novel framework that resolves this trade-off. We integrate the
+              closed-form efficiency and dynamic robustness of DMPs with
+              a provably safe, non-optimization-based control law derived
+              from Spatio-Temporal Tubes (STTs). This synergy allows us
+              to generate motions that are not only robust to perturbations
+              and adaptable to new goals, but also guaranteed to avoid static
+              and dynamic obstacles. Our approach achieves a closed-form
+              solution for a problem that traditionally requires online opti-
+              mization. Experimental results on a 7-DOF robot manipulator
+              demonstrate that SafeDMPs is orders of magnitude faster and
+              more accurate than optimization-based baselines, making it an
+              ideal solution for real-time, safe, and collaborative robotics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+
+        <h2 class="title is-2 has-text-centered">Key Contributions</h2>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>A novel framework integrating DMPs with Spatio-Temporal Tubes (STTs) for provably safe motion generation.</li>
+            <li>A closed-form safety controller eliminating expensive online optimization used by CBF-based methods.</li>
+            <li>Real-time safe trajectory adaptation for human-robot interaction.</li>
+            <li>Extensive validation on a 7-DOF manipulator with dynamic obstacles.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+  <section class="section">
+<div class="container has-text-centered">
+<h2 class="title is-2">Method Overview</h2>
+<img src="./static/images/Methodology_with_Captions.png" style="width:80%;">
+<p class="has-text-centered is-two-thirds">
+Overview of the SafeDMP framework combining DMP trajectory generation with safety guarantees via Spatio-Temporal Tubes.
+</p>
+</div>
+</section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Hardware Demonstrations</h2>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <p>The robotic arm picks and places objects while a human hand randomly blocks its motion repeatedly. The arm
+            must avoid collisions and continue the task smoothly.</p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <video controls autoplay loop muted playsinline src="./resources/videos/ICRA_Demo_1.mp4"
+            poster="./resources/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <p>The arm wipes a patient while avoiding accidental interference from a healthcare worker entering the
+            workspace.</p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <video controls autoplay loop muted playsinline src="./resources/videos/ICRA_Demo_2.mp4"
+            poster="./resources/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths has-text-centered">
+        <p>The arm moves through a multi-obstacle environment while adapting to obstacles that are moved around by a
+          human operator.</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/videos/ICRA_Demo_3.mp4"
+          poster="./resources/loading-icon.gif"
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Obstacle Avoidance with Moving Obstacles Across Algorithms</h2>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <p>Comparing the performance of SafeDMPs against baseline methods in a dynamic environment with moving
+            obstacles intersecting the nominal trajectory.
+          </p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <video controls autoplay loop muted playsinline src="./resources/videos/Moving_obstacle_avoidance.mp4"
+            poster="./resources/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Simulation Verification</h2>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <p>Validating the performance of SafeDMPs in Pybullet in presense of randomly spawned obstacles along the
+            nominal trajectory.
+          </p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-two-fifths is-centered has-text-centered">
+          <video controls autoplay loop muted playsinline src="./resources/videos/PyBullet_Franka_S_Obstacle.mp4"
+            poster="./resources/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+        <div class="column is-two-fifths is-centered has-text-centered">
+          <video controls autoplay loop muted playsinline src="./resources/videos/PyBullet_Franka_A_Nominal.mp4"
+            poster="./resources/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths has-text-centered">
+          <p>Validating the performance of SafeDMPs in Isaac Sim in presense of obstacles along the nominal trajectory.
+          </p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths is-centered has-text-centered">
+          <video controls autoplay loop muted playsinline src="./resources/videos/IsaacSim_Franka_S_Obstacle.mp4"
+            poster="./resources/loading-icon.gif"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Team</h2>
+      <div class="columns is-centered">
+        <div class="column is-one-fifth is-centered has-text-centered">
+          <a href="https://pranavtiwari.co.in" target="_blank" style="border-bottom: none;">
+            <span class="image"><img src="./static/images/PranavTiwari.jpeg" alt=""
+                style="width: 70%; margin-left: auto; margin-right: auto;" /></span>
+          </a>
+          <span style="font-weight: bold; font-size: 130%;">
+            <a href="https://pranavtiwari.co.in/" target="_blank" style="color: black;">
+              Pranav Tiwari
+            </a>
+          </span> <br>
+          (project co-lead)
+        </div>
+        <div class="column is-one-fifth is-centered has-text-centered">
+          <a href="https://www.linkedin.com/in/soumyodipta-n-51746225a/" target="_blank" style="border-bottom: none;">
+            <span class="image"><img src="./static/images/soumyo.jpg" alt=""
+                style="width: 70%; margin-left: auto; margin-right: auto;" /></span>
+          </a>
+          <span style="font-weight: bold; font-size: 130%;">
+            <a href="https://www.linkedin.com/in/soumyodipta-n-51746225a/" target="_blank" style="color: black;">
+              Soumyodipta Nath
+            </a>
+          </span> <br>
+          (project co-lead)
+        </div>
+        <div class="column is-one-fifth is-centered has-text-centered">
+          <a href="https://www.linkedin.com/in/ravi-prakash-a93ab9a8/" target="_blank" style="border-bottom: none;">
+            <span class="image"><img src="./static/images/ravipr_circle.png" alt=""
+                style="width: 70%; margin-left: auto; margin-right: auto;" /></span>
+          </a>
+          <span style="font-weight: bold; font-size: 130%;">
+            <a href="https://www.linkedin.com/in/ravi-prakash-a93ab9a8/" target="_blank" style="color: black;">
+              Ravi Prakash
+            </a>
+          </span> <br>
+          (advisor)
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Submission Video</h2>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths is-centered has-text-centered">
+          <p>The video explaining the proposed method and its application in both simulation and real-world scenarios.
+          </p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-three-fifths is-centered has-text-centered">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/5UeMJHk_JME" title="Robot Conga funny failures" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Acknowledgements -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Acknowledgements</h2>
+          <div class="content has-text-justified">
+            <p>
+              This work was carried out as part of the Imitation Learning course project in the M.Tech. program in
+              Robotics and Autonomous Systems at the Indian Institute of Science.
+              We thank Dr. Ravi Prakash, the course instructor, for his guidance and support, and the members of Stoch
+              Lab for their valuable assistance during the experiments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container content">
+      <h2 class="titile">BibTeX</h2>
+      <pre><code>@inproceedings{}
+</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a> and
+          <a href="https://robot-parkour.github.io/"><span class="dnerf">Robot-Parkour</span></a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
