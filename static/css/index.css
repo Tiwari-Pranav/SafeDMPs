@@ -174,3 +174,15 @@ body {
   margin-top: 0.5em;
 }
 
+
+.conference-badge {
+  display: inline-block;
+  background: linear-gradient(135deg,#5b6abf,#7b68ee);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  max-width: 90%;
+  word-wrap: break-word;
+}
